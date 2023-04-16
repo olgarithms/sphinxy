@@ -23,7 +23,19 @@ extensions = [
 autoclass_content = 'both'
 html_favicon = "_static/favicon.ico"
 
-templates_path = ['_templates']
+templates_path = [
+    "_templates",
+]
+html_sidebars = {
+    "**": [
+        "sidebar/brand.html",
+        "sidebar/search.html",
+        "sidebar/scroll-start.html",
+        "sidebar/navigation.html",
+        "sidebar/versions.html",
+        "sidebar/scroll-end.html",
+    ],
+}
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 

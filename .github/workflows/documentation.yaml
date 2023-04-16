@@ -1,9 +1,8 @@
 name: Publish Sphinx Documentation
 
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 
 jobs:
   publish_sphinx_docs:
